@@ -24,7 +24,7 @@ nav a{
                          'left right';
     
     
-    border: solid 2px #05d9e8;
+    border: solid 2px #05d9e8; 
     height: 20rem; 
     box-shadow: 0 0 5rem #78a4ad inset;
     background: rgba(0,0,0,.75); 
@@ -35,17 +35,65 @@ nav a{
 
 .left-column {
     grid-area: left;
+    padding-top: 90px;
+    padding-left: 50px;
+}
+
+.typing {
+    font-family: 'VT323', monospace;
+    font-size: 55px;
+    color: #05d9e8;
+    text-shadow: 2px 2px #ff2a6d;
+    overflow: hidden;
+    white-space: nowrap;
+
+    animation-name: typing;
+    animation-duration: 5s;
+    animation-timing-function: steps(14, end);
+    animation-iteration-count: infinite;
+}
+
+@keyframes typing {
+    from { width: 0%; }
+    to { width: 100%; }
+}
+
+.intro {
+    font-family: 'VT323', monospace;
+    color: #05d9e8;
+    text-shadow: 2px 2px #ff2a6d;
 }
 
 .right-column {
     grid-area: right;
 }
 
-img {
-    width: 15%;
-    position: absolute;
-    animation: run 2s linear infinite;
+
+.profile {
+    position: relative; 
+    width: 350px; 
+    height: 350px;
+    display: flex; 
+    justify-content: center; 
+    align-items: center
+    
 }
+
+.round {
+    animation: run 2s linear infinite;
+    height: 220px; 
+    width: 220px; 
+    position: absolute;
+  
+
+}
+
+.profilepic {
+    height: 160px; width: 160px;
+    border-radius: 50%
+  
+}
+
 
 @keyframes run {
     100%{
