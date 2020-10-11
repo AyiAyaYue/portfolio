@@ -10,12 +10,18 @@ nav {
     padding: 0;
     margin: 0;
     height: 10em;
+    justify-content: flex-end;
+    align-items: center;
     
 }
 
 nav a{
-    
-    width: 50%;
+    width: 20%;
+    font-family: 'Teko', sans-serif;
+    font-size: 45px;
+    text-decoration: none;
+    color: #05d9e8;
+    text-shadow: 2px 2px #ff2a6d;
 }
 
 .container {
@@ -25,6 +31,7 @@ nav a{
     
     
     border: solid 2px #05d9e8; 
+    border-radius: 8px;
     height: 20rem; 
     box-shadow: 0 0 5rem #78a4ad inset;
     background: rgba(0,0,0,.75); 
@@ -33,6 +40,7 @@ nav a{
     height: 30em;
 }
 
+
 .left-column {
     grid-area: left;
     padding-top: 90px;
@@ -40,7 +48,7 @@ nav a{
 }
 
 .typing {
-    font-family: 'VT323', monospace;
+    font-family: 'Teko', sans-serif;
     font-size: 55px;
     color: #05d9e8;
     text-shadow: 2px 2px #ff2a6d;
@@ -59,7 +67,7 @@ nav a{
 }
 
 .intro {
-    font-family: 'VT323', monospace;
+    font-family: 'Teko', sans-serif;
     color: #05d9e8;
     text-shadow: 2px 2px #ff2a6d;
 }
@@ -89,7 +97,8 @@ nav a{
 }
 
 .profilepic {
-    height: 160px; width: 160px;
+    height: 160px; 
+    width: 160px;
     border-radius: 50%
   
 }
