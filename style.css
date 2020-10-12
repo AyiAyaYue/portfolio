@@ -1,27 +1,32 @@
 body{
     /*background-image: url(https://media.giphy.com/media/ToMjGpPcTt3go0nrrFe/giphy.gif);*/
+
+
+    background-image: linear-gradient(#01012b, #222035);
     background-size: cover;
     height: 100vh;
     padding:0;
 }
 
+.header{
+    display:flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 10em;
+}
+
 nav {
     display: flex;
-    padding: 0;
-    margin: 0;
-    height: 10em;
-    justify-content: flex-end;
-    align-items: center;
     
 }
 
 nav a{
-    width: 20%;
+    padding: 0 2rem;
     font-family: 'Teko', sans-serif;
-    font-size: 45px;
+    font-size: x-large;
     text-decoration: none;
     color: #05d9e8;
-    text-shadow: 2px 2px #ff2a6d;
+    /*text-shadow: 2px 2px  #d1f7ff;*/
 }
 
 .container {
@@ -51,7 +56,7 @@ nav a{
     font-family: 'Teko', sans-serif;
     font-size: 55px;
     color: #05d9e8;
-    text-shadow: 2px 2px #ff2a6d;
+    /*text-shadow: 2px 2px #ff2a6d;*/
     overflow: hidden;
     white-space: nowrap;
 
@@ -69,7 +74,7 @@ nav a{
 .intro {
     font-family: 'Teko', sans-serif;
     color: #05d9e8;
-    text-shadow: 2px 2px #ff2a6d;
+    /*text-shadow: 2px 2px #ff2a6d;*/
 }
 
 .right-column {
@@ -78,8 +83,7 @@ nav a{
 
 
 .profile {
-    position: relative; 
-    width: 350px; 
+    position: relative;  
     height: 350px;
     display: flex; 
     justify-content: center; 
@@ -110,6 +114,29 @@ nav a{
     }
 }
 
+.contact {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+
+.contact a {
+    padding: 0 2rem;
+    text-decoration: none;
+}
+
+.fa-envelope-square {
+    color: #05d9e8;
+}
+
+.fa-github-square {
+    color: #05d9e8;
+}
+
+.fa-linkedin {
+    color: #05d9e8;
+}
 
 @media screen and (max-width: 1086px) {
     .container{
